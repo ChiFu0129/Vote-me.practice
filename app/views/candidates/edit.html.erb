@@ -1,4 +1,4 @@
-<h1>Add Candidate</h1>
+<h1>Edit Candidate</h1>
 
 <% if @candidate.errors.any? %>
 <ul>
@@ -17,13 +17,3 @@
 <div><%= form.label :politics %> <%= form.text_area :politics %></div>
 
 <%= form.submit %> <% end %>
-
-<!-- <form action="/candidates" method="POST">
-  <input
-    type="hidden"
-    name="authenticity_token"
-    value="<%= form_authenticity_token %>"
-  />
-  <input type="text" name="cc" />
-  <input type="submit" value="GO!" />
-</form> -->
